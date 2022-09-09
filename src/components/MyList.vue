@@ -33,7 +33,7 @@
     max-width: 95%;
     margin: 0 auto;
     background-color: cadetblue;
-    padding: 0.2em 0.5em;
+    padding: 0.2em 0.3em;
 }
 
 </style>

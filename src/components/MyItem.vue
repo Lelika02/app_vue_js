@@ -1,7 +1,7 @@
 <template>
     <div class="item">
         <div class="image">{{titre[0]}}</div><br>
-        <router-link class="lien" :to="{name: 'details', params: { id: this.id }}">{{titre}}</router-link>
+        <router-link class="lien" :to="{name: 'details', params: { id: this.id, titre: this.titre }}">{{titre}}</router-link>
     </div>
 </template>
 

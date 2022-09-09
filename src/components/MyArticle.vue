@@ -1,10 +1,12 @@
 <template>
-    <div class="div">
+    <div class="item1">
+        <h3 class="image">{{titre[0]}}</h3>
         <h3 class="titre">{{article.title}}</h3>
     </div>
+    
     <div class="content">{{article.body}}</div>
 
-    <h3>Les commentaires</h3>
+    <h4>Commentaires</h4>
     
     <div class="commentaires" v-for="(comment, key) in comments" :key="key">
         <h5>{{comment.email}}</h5>
@@ -45,6 +47,7 @@
 
 <style>
     .titre{
+        padding-top: 1em;
         color: gray;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
@@ -52,13 +55,21 @@
         margin: auto;
         max-width: 50%;
     }
+    h4{
+        text-decoration: underline;
+    }
     .comment{
         margin: auto;
         max-width: 50%;
     }
-    .div{
+    .item1{
         display: flex;
+        background-color: floralwhite;
+        margin-left: 20em;
+        padding: 5px 0;
+        cursor: pointer;
     }
+
     .image{
         padding-top: 1em;
         color: white;
